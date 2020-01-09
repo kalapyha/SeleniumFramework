@@ -1,0 +1,7 @@
+<suite name="EDealer" parallel="methods" thread-count="5">
+    <test name="EDealer-1" >
+        <classes>
+            <class name="tests.VLPTest"/>
+        </classes>
+    </test>
+</suite>
