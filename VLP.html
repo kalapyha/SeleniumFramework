@@ -46,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jan 9, 2020 04:14:27 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jan 9, 2020 06:08:58 PM</span>
 				</a>
 			</li>
 			<li>
@@ -137,7 +137,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -158,14 +158,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Check if price filter is responding and works correct</span>
-						<span class='test-time'>Jan 9, 2020 04:14:58 PM</span>
+						<span class='test-time'>Jan 9, 2020 06:09:10 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jan 9, 2020 04:14:58 PM</span>
-	<span class='label end-time'>Jan 9, 2020 04:15:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+781ms</span>
+	<span class='label start-time'>Jan 9, 2020 06:09:10 PM</span>
+	<span class='label end-time'>Jan 9, 2020 06:09:11 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+193ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -179,18 +179,28 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:01 PM</td>
-					<td class='step-details'>lower price detect</td>
+					<td class='timestamp'>6:09:10 PM</td>
+					<td class='step-details'>add to compare button is visible</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:04 PM</td>
-					<td class='step-details'>higher price detect</td>
+					<td class='timestamp'>6:09:10 PM</td>
+					<td class='step-details'>add to compare button is in the DOM</td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>4:15:04 PM</td>
-					<td class='step-details'>Filter works fine: 3000 is less than 44500 !</td>
+					<td class='timestamp'>6:09:10 PM</td>
+					<td class='step-details'>switched to the grid view, add to compare button is NOT in the DOM</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:09:11 PM</td>
+					<td class='step-details'>switched back the table view, add to compare button is in the DOM</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>6:09:11 PM</td>
+					<td class='step-details'>add to compare button is visible again</td>
 				</tr>
 			</tbody>
 		</table>
@@ -238,25 +248,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 9, 2020 04:14:27 PM</div>
+					<div class='panel-lead'>Jan 9, 2020 06:08:58 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 9, 2020 04:15:05 PM</div>
+			 		<div class='panel-lead'>Jan 9, 2020 06:09:11 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 37s+484ms</div>
+					<div class='panel-lead'>0h 0m 13s+83ms</div>
 				</div>
 			</div>
 		</div>
@@ -277,7 +287,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 3,
+				passChild: 5,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,

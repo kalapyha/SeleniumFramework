@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a185e162-6e71-4b04-b006-93c199385241" name="Default Changelist" comment="" />
+    <list default="true" id="a185e162-6e71-4b04-b006-93c199385241" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VLP.html" beforeDir="false" afterPath="$PROJECT_DIR$/VLP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/VLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/VLP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/VLPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/VLPTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +26,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/pages/VLP.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="795">
-                  <caret line="77" selection-start-line="77" selection-end-line="77" />
+                <state relative-caret-position="1005">
+                  <caret line="92" selection-start-line="92" selection-end-line="92" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -32,8 +38,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/tests/VLPTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="158" column="32" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="32" />
+                <state relative-caret-position="2655">
+                  <caret line="177" column="109" lean-forward="true" selection-start-line="177" selection-start-column="34" selection-end-line="177" selection-end-column="109" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -48,10 +54,14 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/pages/VLP.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-506">
-                  <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+                <state relative-caret-position="315">
+                  <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#4814#4815#0" expanded="true" />
+                    <element signature="e#4866#4867#0" expanded="true" />
+                    <element signature="e#4969#4970#0" expanded="true" />
+                    <element signature="e#5029#5030#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -67,6 +77,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -102,8 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -174,6 +187,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -196,7 +210,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.VLPTest.checkPriceFilter">
+  <component name="RunManager" selected="TestNG.VLPTest.checkViewSwitcher">
     <configuration name="VLPTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
@@ -208,24 +222,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.VLPTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VLPTest.checkHideMoreOptionsFilter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.VLPTest" />
-      <option name="METHOD_NAME" value="checkHideMoreOptionsFilter" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -286,13 +282,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VLPTest.checkViewSwitcher" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.VLPTest" />
+      <option name="METHOD_NAME" value="checkViewSwitcher" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.VLPTest.checkViewSwitcher" />
         <item itemvalue="TestNG.VLPTest.checkPriceFilter" />
         <item itemvalue="TestNG.VLPTest.checkNumbers" />
         <item itemvalue="TestNG.VLPTest" />
         <item itemvalue="TestNG.VLPTest.checkLocationUsingTitleAddress" />
-        <item itemvalue="TestNG.VLPTest.checkHideMoreOptionsFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -322,41 +336,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 15h 48m 07s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 34m 01s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 15h 57m 03s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 36m 19s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 00m 03s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 39m 10s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 03m 47s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 45m 12s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 04m 17s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 52m 19s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 05m 33s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 54m 35s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 06m 28s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 56m 18s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkNumbers - 2020.01.09 at 16h 07m 22s.xml">
-      <configuration name="VLPTest.checkNumbers" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 17h 57m 06s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkPriceFilter - 2020.01.09 at 16h 13m 33s.xml">
-      <configuration name="VLPTest.checkPriceFilter" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 18h 06m 04s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="VLPTest_checkPriceFilter - 2020.01.09 at 16h 15m 06s.xml">
-      <configuration name="VLPTest.checkPriceFilter" configurationId="TestNG" />
+    <history-entry file="VLPTest_checkViewSwitcher - 2020.01.09 at 18h 09m 12s.xml">
+      <configuration name="VLPTest.checkViewSwitcher" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-15" width="1920" height="977" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1544196" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15601704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -365,7 +380,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.14175825" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.11412429" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15932204" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,8 +536,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/VLP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="1005">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -531,8 +546,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/VLPTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="158" column="32" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="32" />
+        <state relative-caret-position="2655">
+          <caret line="177" column="109" lean-forward="true" selection-start-line="177" selection-start-column="34" selection-end-line="177" selection-end-column="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

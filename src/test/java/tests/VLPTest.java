@@ -172,6 +172,42 @@ public class VLPTest {
 
     }
 
+    @Test()
+    public void checkViewSwitcher() {
+        System.out.println("Inside test checkViewSwitcher | Thread : " + Thread.currentThread().getId());
+        test = extent.createTest("Check if view switcher is working using elements visibility and DOM present");
+
+        inventoryVLP = new VLP(driver); // Initialize instance from objects page
+
+        WebElement addToCompare = inventoryVLP.getCompareCheckbox();
+        Assert.assertTrue(inventoryVLP.isVisibleInViewport(addToCompare));
+        test.pass("add to compare button is visible");
+
+        List<WebElement> listOfAddToCompare = inventoryVLP.getListOfCompareCheckbox();
+        Assert.assertTrue(listOfAddToCompare.size() != 0);
+        test.pass("add to compare button is in the DOM");
+
+        inventoryVLP.switchToGridView(); // Switch to Grid View
+
+        listOfAddToCompare = inventoryVLP.getListOfCompareCheckbox();
+
+
+        Assert.assertTrue(listOfAddToCompare.size() == 0);
+        test.pass("switched to the grid view, add to compare button is NOT in the DOM");
+
+
+        inventoryVLP.switchToTableView();
+        listOfAddToCompare = inventoryVLP.getListOfCompareCheckbox();
+
+        Assert.assertTrue(listOfAddToCompare.size() != 0);
+        test.pass("switched back the table view, add to compare button is in the DOM");
+
+        addToCompare = inventoryVLP.getCompareCheckbox();
+        Assert.assertTrue(inventoryVLP.isVisibleInViewport(addToCompare));
+        test.pass("add to compare button is visible again");
+
+    }
+
 
     // TODO: 2020-01-09 !!!!!! END OF THE CHECKED TESTS
     @Test(enabled = false) // Test 3

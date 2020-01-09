@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.RemoteWebElement;
 
+import java.util.List;
+
 public class VLP {
 
     WebDriver driver = null;
@@ -17,6 +19,9 @@ public class VLP {
     By vehicle_price = By.cssSelector("span.vehicle-price-2-new > span");
     By sort_price_asc = By.cssSelector("#sortPriceAsc > a");
     By sort_price_desc = By.cssSelector("#sortPriceDesc > a");
+    By compare_checkbox = By.cssSelector("div.checkbox.checkbox-btn.select-trim-mobile.listing-comparison-checkbox.compare-checkbox-btn");
+    By switch_grid_view = By.id("switchGridView");
+    By switch_table_view = By.id("switchTableView");
 
     // ------------  CONSTRUCTOR WITH DRIVER  ------------
     public VLP(WebDriver driver) {
@@ -31,6 +36,16 @@ public class VLP {
 
     public WebElement getBottomSearchFilters() {
         return driver.findElement(bottom_filter_area);
+    }
+
+    public WebElement getCompareCheckbox() {
+        return driver.findElement(compare_checkbox);
+    }
+
+    public List<WebElement> getListOfCompareCheckbox() {
+
+        List<WebElement> listOfAddToCompare = driver.findElements(By.cssSelector("div.checkbox.checkbox-btn.select-trim-mobile.listing-comparison-checkbox.compare-checkbox-btn"));
+        return listOfAddToCompare;
     }
 
     public String getPartialAddressFromPage() {
@@ -119,6 +134,16 @@ public class VLP {
         driver.findElement(sort_price_desc).click();
         String wholePrice = driver.findElement(vehicle_price).getText();
         return getNumbersFromString(wholePrice);
+    }
+
+
+
+    public void switchToGridView() {
+        driver.findElement(switch_grid_view).click();
+    }
+
+    public void switchToTableView() {
+        driver.findElement(switch_table_view).click();
     }
 
 
