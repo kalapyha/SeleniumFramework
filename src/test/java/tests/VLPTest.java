@@ -178,7 +178,7 @@ public class VLPTest {
         test = extent.createTest("Check if view switcher is working using elements visibility and DOM present");
 
         inventoryVLP = new VLP(driver); // Initialize instance from objects page
-
+        driver.navigate().refresh();
         WebElement addToCompare = inventoryVLP.getCompareCheckbox();
         Assert.assertTrue(inventoryVLP.isVisibleInViewport(addToCompare));
         test.pass("add to compare button is visible");
@@ -208,6 +208,29 @@ public class VLPTest {
 
     }
 
+
+    @Test
+    public void checkMileageSlider() {
+        driver.navigate().refresh();
+        System.out.println("Inside test checkMileageSwitcher | Thread : " + Thread.currentThread().getId());
+        test = extent.createTest("Check the switcher is working using click-hold action");
+        inventoryVLP = new VLP(driver);
+        int startMileage = inventoryVLP.getNumbersFromString(inventoryVLP.getMileageStartValue().getText());
+
+        try {
+            inventoryVLP.setMileageAction();
+            test.pass("mileage is set to start form 10km");
+        } catch (InterruptedException e) {
+            test.fail("Test fail due to: " + e.getCause());
+
+        }
+
+        int startMileageAfterSwitch = inventoryVLP.getNumbersFromString(inventoryVLP.getMileageStartValue().getText());
+        Assert.assertTrue(startMileageAfterSwitch - startMileage == 10);
+        test.pass("start mileage is correct 10km = 10km");
+        inventoryVLP.clickClearAllButton();
+        test.pass("clear all button clicked");
+    }
 
     // TODO: 2020-01-09 !!!!!! END OF THE CHECKED TESTS
     @Test(enabled = false) // Test 3
@@ -259,8 +282,8 @@ public class VLPTest {
 
     @AfterTest
     public void testExit(){
-        driver.close();
-        driver.quit();
+//        driver.close();
+//        driver.quit();
     }
 
     @AfterSuite

@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import java.util.List;
@@ -22,6 +23,8 @@ public class VLP {
     By compare_checkbox = By.cssSelector("div.checkbox.checkbox-btn.select-trim-mobile.listing-comparison-checkbox.compare-checkbox-btn");
     By switch_grid_view = By.id("switchGridView");
     By switch_table_view = By.id("switchTableView");
+    By mileage_start_value = By.id("mileageSliderStart");
+    By mileage_switcher = By.xpath("//div[@id='mileageSlider']/a");
 
     // ------------  CONSTRUCTOR WITH DRIVER  ------------
     public VLP(WebDriver driver) {
@@ -41,6 +44,8 @@ public class VLP {
     public WebElement getCompareCheckbox() {
         return driver.findElement(compare_checkbox);
     }
+
+    public WebElement getMileageStartValue() {return driver.findElement(mileage_start_value);}
 
     public List<WebElement> getListOfCompareCheckbox() {
 
@@ -146,7 +151,25 @@ public class VLP {
         driver.findElement(switch_table_view).click();
     }
 
+    public void setMileageRange() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.xpath("//div[@id='mileageSlider']/a"));
+        Actions action = new Actions(driver);
+        action.click(element).build().perform();
+        js.executeScript("arguments[0].setAttribute('style', 'left: 40.50%')", element);
+        action.sendKeys(Keys.ARROW_RIGHT).build().perform();
+    }
 
+    public void setMileageAction() throws InterruptedException {
+        Actions action = new Actions(driver);
+        WebElement element = driver.findElement(mileage_switcher);
+        action.click(element).build().perform();
+        Thread.sleep(1000);
+        for (int i = 0; i < 10; i++) {
+            action.sendKeys(Keys.ARROW_RIGHT).build().perform();
+            Thread.sleep(200);
+        }
+    }
 
 
 
