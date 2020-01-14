@@ -2,14 +2,6 @@
     <test thread-count="5" name="EDealer" parallel="classes">
         <classes>
             <class name="tests.VLPTest"/>
-            <class name="tests.VLPTest"/>
-        </classes>
-    </test>
-
-    <test name="Regression1">
-        <classes>
-            <class name="tests.VLPTest"/>
-            <!-- <class name="test.***"/>  -->
         </classes>
     </test>
 </suite>

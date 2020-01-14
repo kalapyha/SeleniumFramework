@@ -151,6 +151,8 @@ public class VLP {
         driver.findElement(switch_table_view).click();
     }
 
+    // TODO: This method is not working correctly.
+    //  It moves the slider according to the %value but the actual Mileage is set to 0
     public void setMileageRange() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement element = driver.findElement(By.xpath("//div[@id='mileageSlider']/a"));

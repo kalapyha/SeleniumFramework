@@ -282,8 +282,8 @@ public class VLPTest {
 
     @AfterTest
     public void testExit(){
-//        driver.close();
-//        driver.quit();
+        driver.close();
+        driver.quit();
     }
 
     @AfterSuite
