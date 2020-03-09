@@ -72,6 +72,13 @@ public class VLPTest {
         test.pass("Compare Vehicles button is not visible in viewport");
 
         inventoryVLP.getCompareCheckbox().click();
+        Assert.assertTrue(inventoryVLP.isVisibleInViewport(inventoryVLP.getCompareVehiclesButton()) == true) ;
+        test.pass("Compare Vehicles button is visible in viewport");
+
+        inventoryVLP.getCompareCheckbox().click();
+
+        Assert.assertTrue(inventoryVLP.isVisibleInViewport(inventoryVLP.getCompareVehiclesButton()) == false) ;
+        test.pass("passed");
 
 
 

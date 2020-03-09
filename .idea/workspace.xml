@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a185e162-6e71-4b04-b006-93c199385241" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_common_java3_3_158_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_common_java3_3_160_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_connectivity_java3_jersey2x_3_158_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_connectivity_java3_jersey2x_3_160_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_sdk_core_java3_3_158_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_sdk_core_java3_3_160_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_selenium_java3_3_158_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_applitools_eyes_selenium_java3_3_160_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ContactForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VLP.html" beforeDir="false" afterPath="$PROJECT_DIR$/VLP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/VLP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/VLP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/VLPTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/VLPTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/SeleniumFramework.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +54,25 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.VLPTest.checkCompareVehiclesButton">
+  <component name="RunManager" selected="TestNG.ContactForm.checkPageTitleContainsUsedCars">
+    <configuration name="ContactForm.checkPageTitleContainsUsedCars" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactForm" />
+      <option name="METHOD_NAME" value="checkPageTitleContainsUsedCars" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VLPTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumFramework" />
       <extension name="coverage">
@@ -90,24 +101,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.VLPTest" />
       <option name="METHOD_NAME" value="checkCompareVehiclesButton" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VLPTest.checkHideMoreOptionsFilter" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SeleniumFramework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.VLPTest" />
-      <option name="METHOD_NAME" value="checkHideMoreOptionsFilter" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactForm.checkPageTitleContainsUsedCars" />
         <item itemvalue="TestNG.VLPTest.checkCompareVehiclesButton" />
         <item itemvalue="TestNG.VLPTest.checkViewSwitcher" />
         <item itemvalue="TestNG.VLPTest.checkPageTitleContainsUsedCars" />
         <item itemvalue="TestNG.VLPTest" />
-        <item itemvalue="TestNG.VLPTest.checkHideMoreOptionsFilter" />
       </list>
     </recent_temporary>
   </component>
@@ -195,29 +188,33 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1570" y="180" key="#TestNGDemo/0.23.2560.1337@0.23.2560.1337" timestamp="1576986911300" />
+    <state x="-510" y="-851" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1583787169720">
+      <screen x="-1209" y="-1177" width="1920" height="1177" />
+    </state>
+    <state x="-510" y="-851" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583787169720" />
     <state x="1681" y="417" key="#com.intellij.ide.util.MemberChooser" timestamp="1577073030123">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1681" y="417" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1577073030123" />
-    <state width="1857" height="313" key="GridCell.Tab.0.bottom" timestamp="1583784233788">
+    <state width="1857" height="313" key="GridCell.Tab.0.bottom" timestamp="1583790000235">
       <screen x="-1209" y="-1177" width="1920" height="1177" />
     </state>
-    <state width="1857" height="313" key="GridCell.Tab.0.bottom/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583784233788" />
+    <state width="1857" height="313" key="GridCell.Tab.0.bottom/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000235" />
     <state width="2070" height="358" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908492" />
-    <state width="1857" height="313" key="GridCell.Tab.0.center" timestamp="1583784233786">
+    <state width="1857" height="313" key="GridCell.Tab.0.center" timestamp="1583790000233">
       <screen x="-1209" y="-1177" width="1920" height="1177" />
     </state>
-    <state width="1857" height="313" key="GridCell.Tab.0.center/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583784233786" />
+    <state width="1857" height="313" key="GridCell.Tab.0.center/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000233" />
     <state width="2070" height="358" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908491" />
-    <state width="1857" height="313" key="GridCell.Tab.0.left" timestamp="1583784233786">
+    <state width="1857" height="313" key="GridCell.Tab.0.left" timestamp="1583790000232">
       <screen x="-1209" y="-1177" width="1920" height="1177" />
     </state>
-    <state width="1857" height="313" key="GridCell.Tab.0.left/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583784233786" />
+    <state width="1857" height="313" key="GridCell.Tab.0.left/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000232" />
     <state width="2070" height="358" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908491" />
-    <state width="1857" height="313" key="GridCell.Tab.0.right" timestamp="1583784233787">
+    <state width="1857" height="313" key="GridCell.Tab.0.right" timestamp="1583790000234">
       <screen x="-1209" y="-1177" width="1920" height="1177" />
     </state>
-    <state width="1857" height="313" key="GridCell.Tab.0.right/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583784233787" />
+    <state width="1857" height="313" key="GridCell.Tab.0.right/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000234" />
     <state width="2070" height="358" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908492" />
     <state x="-491" y="-737" key="com.intellij.ide.util.TipDialog" timestamp="1583774846434">
       <screen x="-1209" y="-1177" width="1920" height="1177" />
