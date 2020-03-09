@@ -25,12 +25,17 @@ public class VLP {
     By switch_table_view = By.id("switchTableView");
     By mileage_start_value = By.id("mileageSliderStart");
     By mileage_switcher = By.xpath("//div[@id='mileageSlider']/a");
+    By compare_vehicles = By.id("compareVehicles");
 
     // ------------  CONSTRUCTOR WITH DRIVER  ------------
     public VLP(WebDriver driver) {
 
         this.driver = driver;
 
+    }
+
+    public WebElement getCompareVehiclesButton() {
+        return driver.findElement(compare_vehicles);
     }
 
     public WebElement getClearAllButton() {
@@ -152,7 +157,7 @@ public class VLP {
     }
 
     // TODO: This method is not working correctly.
-    //  It moves the slider according to the %value but the actual Mileage is set to 0
+    //  It moves the slider according to the value but the actual Mileage is set to 0
     public void setMileageRange() {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         WebElement element = driver.findElement(By.xpath("//div[@id='mileageSlider']/a"));

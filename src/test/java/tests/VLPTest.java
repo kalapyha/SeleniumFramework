@@ -58,8 +58,24 @@ public class VLPTest {
         test = extent.createTest("Check VLP title contains 'Cars, SUVs, Trucks for Sale' to make sure we are at the correct page");
 
         Assert.assertTrue(driver.getTitle().contains("Cars, SUVs, Trucks for Sale"));
+        System.out.println("Title checked!");
 
         test.pass("navigated to the " + driver.getCurrentUrl() + " successfully");
+    }
+
+    @Test() // TEST !!!
+    public void checkCompareVehiclesButton() {
+        System.out.println("Inside test checkPageTitleContainsUsedCars | Thread : " + Thread.currentThread().getId());
+        test = extent.createTest("Check VLP title contains 'Cars, SUVs, Trucks for Sale' to make sure we are at the correct page");
+        inventoryVLP = new VLP(driver); // Initialize instance from objects page
+        Assert.assertTrue(inventoryVLP.isVisibleInViewport(inventoryVLP.getCompareVehiclesButton()) == false) ;
+        test.pass("Compare Vehicles button is not visible in viewport");
+
+        inventoryVLP.getCompareCheckbox().click();
+
+
+
+
     }
 
     @Test
@@ -225,6 +241,7 @@ public class VLPTest {
 
         }
 
+
         int startMileageAfterSwitch = inventoryVLP.getNumbersFromString(inventoryVLP.getMileageStartValue().getText());
         Assert.assertTrue(startMileageAfterSwitch - startMileage == 10);
         test.pass("start mileage is correct 10km = 10km");
@@ -280,11 +297,11 @@ public class VLPTest {
 
 
 
-    @AfterTest
-    public void testExit(){
-        driver.close();
-        driver.quit();
-    }
+//    @AfterTest
+//    public void testExit(){
+//        driver.close();
+//        driver.quit();
+//    }
 
     @AfterSuite
     public void tearDown() {
