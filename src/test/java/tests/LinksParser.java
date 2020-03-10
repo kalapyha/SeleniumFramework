@@ -12,8 +12,8 @@ import java.util.stream.Collectors;
 
 public class LinksParser {
     public static void main(String[] args) {
-        // WebDriverManager.chromedriver().setup();
-        System.setProperty("webdriver.chrome.driver", "/Users/mykola/Desktop/SeleniumFramework-master/drivers/chrome/chromedriver");
+        WebDriverManager.chromedriver().setup();
+        // System.setProperty("webdriver.chrome.driver", "/Users/mykola/Desktop/SeleniumFramework-master/drivers/chrome/chromedriver");
 
         //WebDriver driver = new ChromeDriver();
         WebDriver driver = new ChromeDriver();
@@ -44,6 +44,10 @@ public class LinksParser {
 
             if (!url.startsWith(homePage)) {
                 System.out.println("URL belongs to another domain, skipping it.");
+                continue;
+            }
+            if ((url.startsWith(homePage + "new")) || (url.startsWith(homePage + "used"))) {
+                System.out.println("URL belongs to inventory, skipping it.");
                 continue;
             }
             validLinks.add(url);
