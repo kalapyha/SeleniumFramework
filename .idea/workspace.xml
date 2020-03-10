@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a185e162-6e71-4b04-b006-93c199385241" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SeleniumFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeleniumFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LinksParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LinksParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ContactForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ContactForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LinksParser">
+  <component name="RunManager" selected="TestNG.ContactForm.checkPageTitleContainsUsedCars">
     <configuration name="LinksParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tests.LinksParser" />
       <module name="SeleniumFramework" />
@@ -144,8 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinksParser" />
         <item itemvalue="TestNG.ContactForm.checkPageTitleContainsUsedCars" />
+        <item itemvalue="Application.LinksParser" />
         <item itemvalue="TestNG.VLPTest.checkCompareVehiclesButton" />
         <item itemvalue="TestNG.VLPTest.checkViewSwitcher" />
         <item itemvalue="TestNG.VLPTest.checkPageTitleContainsUsedCars" />
@@ -194,28 +191,28 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1681" y="417" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1337@0.23.2560.1337" timestamp="1577073030123" />
-    <state width="1814" height="220" key="GridCell.Tab.0.bottom" timestamp="1583849833801">
+    <state width="1814" height="220" key="GridCell.Tab.0.bottom" timestamp="1583852926504">
       <screen x="-1920" y="23" width="1920" height="1177" />
     </state>
-    <state width="1814" height="220" key="GridCell.Tab.0.bottom/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583849833801" />
+    <state width="1814" height="220" key="GridCell.Tab.0.bottom/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583852926504" />
     <state width="1857" height="313" key="GridCell.Tab.0.bottom/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000235" />
     <state width="2070" height="358" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908492" />
-    <state width="1814" height="220" key="GridCell.Tab.0.center" timestamp="1583849833800">
+    <state width="1814" height="220" key="GridCell.Tab.0.center" timestamp="1583852926503">
       <screen x="-1920" y="23" width="1920" height="1177" />
     </state>
-    <state width="1814" height="220" key="GridCell.Tab.0.center/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583849833800" />
+    <state width="1814" height="220" key="GridCell.Tab.0.center/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583852926503" />
     <state width="1857" height="313" key="GridCell.Tab.0.center/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000233" />
     <state width="2070" height="358" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908491" />
-    <state width="1814" height="220" key="GridCell.Tab.0.left" timestamp="1583849833800">
+    <state width="1814" height="220" key="GridCell.Tab.0.left" timestamp="1583852926503">
       <screen x="-1920" y="23" width="1920" height="1177" />
     </state>
-    <state width="1814" height="220" key="GridCell.Tab.0.left/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583849833800" />
+    <state width="1814" height="220" key="GridCell.Tab.0.left/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583852926503" />
     <state width="1857" height="313" key="GridCell.Tab.0.left/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000232" />
     <state width="2070" height="358" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908491" />
-    <state width="1814" height="220" key="GridCell.Tab.0.right" timestamp="1583849833801">
+    <state width="1814" height="220" key="GridCell.Tab.0.right" timestamp="1583852926504">
       <screen x="-1920" y="23" width="1920" height="1177" />
     </state>
-    <state width="1814" height="220" key="GridCell.Tab.0.right/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583849833801" />
+    <state width="1814" height="220" key="GridCell.Tab.0.right/-1920.23.1920.1177/0.23.1792.1017@-1920.23.1920.1177" timestamp="1583852926504" />
     <state width="1857" height="313" key="GridCell.Tab.0.right/0.23.1440.829/-1209.-1177.1920.1177/711.-1057.1920.1057@-1209.-1177.1920.1177" timestamp="1583790000234" />
     <state width="2070" height="358" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1577080908492" />
     <state x="-1202" y="463" key="com.intellij.ide.util.TipDialog" timestamp="1583849138940">

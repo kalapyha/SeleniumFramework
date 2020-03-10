@@ -21,11 +21,8 @@ public class ContactForm {
     private WebDriver driver = null;
     private ExtentHtmlReporter html;
     private ExtentReports extent;
-    private ExtentTest test = null;
-    private VLP inventoryVLP = null;
-    private WebDriverWait wait = null;
-    private String yearSearch = "2016";
     private String sbm = "InfoRequest-Submit";
+
     @BeforeSuite
     public void setUpSuit() {
 
@@ -47,14 +44,23 @@ public class ContactForm {
     }
 
 
-@Test
-public void checkPageTitleContainsUsedCars() {
-   // By contact_form = By.id("iConactForm");
+    @Test
+    public void checkPageTitleContainsUsedCars() {
+        int size = driver.findElements(By.tagName("iframe")).size();
+        System.out.println(size);
+        Assert.assertTrue(size > 1); // Check if we have more than 1 iframe inside the page;
+        driver.switchTo().frame(1); // Switch to the iframe 'Contact form'
 
-    WebElement contactForm = driver.findElement(By.id(sbm));
+        WebElement contact_form = driver.findElement(By.id("ed-contact-form"));
+
+        VLP obj = new VLP(driver);
+        Assert.assertTrue(obj.isVisibleInViewport(contact_form));
+
+        WebElement contactForm = driver.findElement(By.id(sbm));
+        contactForm.click(); // SUBMIT Button has been clicked
 
 
-//Assert.assertTrue(driver.isVisibleInViewport(contactForm));
+
 }
 
 
