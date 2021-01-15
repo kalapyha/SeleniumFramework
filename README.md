@@ -2,8 +2,8 @@
 Before start please follow this guide https://bit.ly/2N9vfbq to make sure everything works fine on your end.
 
 Run test. (src => test => tests => VLPTest) press right click and click 'Run VLPTest' from the drop-down menu 
-OR run testng.xml 
-OR type in your teminal $ mvn clean test
+OR run `testng.xml` 
+OR type in your teminal $ `mvn clean test`
 
 Open in your browser VLP.html from the IJ-project and check the test rusults report.
 
